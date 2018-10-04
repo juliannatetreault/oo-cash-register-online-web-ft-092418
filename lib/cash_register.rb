@@ -5,7 +5,6 @@ class CashRegister
     @total = 0
     @discount = discount
     @items = []
-    @last_transaction = price * quantity
   end
   
   #returns the current total
@@ -19,7 +18,7 @@ class CashRegister
     quantity.times do 
       items << title
   end
-  #@last_transaction = price * quantity
+  @last_transaction = price * quantity
 end
   
   #applies a discount if given and returns the total

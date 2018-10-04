@@ -5,6 +5,7 @@ class CashRegister
     @total = 0
     @discount = discount
     @items = []
+    @last_transaction = price * quantity
   end
   
   #returns the current total
